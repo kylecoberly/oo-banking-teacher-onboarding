@@ -22,6 +22,6 @@ class Transfer
   def reverse_transfer
     @old_receiver = @receiver.clone
     @receiver = @sender
-    @sender = old_receiver
+    @sender = @old_receiver
   end
 end
