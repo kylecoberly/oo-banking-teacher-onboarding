@@ -17,7 +17,7 @@ class BankAccount
   end
 
   def valid?
-    @status && @balance
+    @status && @balance > 0
   end
 
   def close_account
