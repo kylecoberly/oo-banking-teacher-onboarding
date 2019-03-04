@@ -21,4 +21,8 @@ class BankAccount
   def valid?
     @status && @bank_account
   end
+
+  def close_account
+    @status = "closed"
+  end
 end
