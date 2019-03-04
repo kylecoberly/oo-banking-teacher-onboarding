@@ -1,7 +1,7 @@
 class Transfer
   attr_reader :sender, :receiver, :pending, :amount
   attr_accessor :status
-  
+
   def initialize sender, receiver, amount
     @sender = sender
     @receiver = receiver
@@ -25,5 +25,7 @@ class Transfer
     @old_receiver = @receiver.clone
     @receiver = @sender
     @sender = @old_receiver
+    @status = "pending"
+    execute_transaction
   end
 end
