@@ -6,5 +6,6 @@ class BankAccount
     @status = "open"
   end
   def balance
+    @bank_account
   end
 end
