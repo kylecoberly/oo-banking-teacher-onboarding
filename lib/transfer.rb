@@ -17,12 +17,12 @@ class Transfer
     if @status == "pending"
       @sender.balance -= amount
       @receiver.balance += amount
-      @status = "completed"
+      @status = "complete"
     end
   end
 
   def reverse_transfer
-    if @status = "completed"
+    if @status = "complete"
       @old_receiver = @receiver.clone
       @receiver = @sender
       @sender = @old_receiver
