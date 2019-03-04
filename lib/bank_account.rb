@@ -13,4 +13,7 @@ class BankAccount
   def deposit amount
     @bank_account += amount
   end
+
+  def display_balance
+    "You balance is $#{balance}."
 end
