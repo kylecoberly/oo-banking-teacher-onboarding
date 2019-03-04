@@ -1,3 +1,5 @@
 class Transfer
-  # your code here
+  def initialize first_person, second_person, amount
+    
+  end
 end
