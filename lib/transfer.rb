@@ -4,4 +4,6 @@ class Transfer
   end
   def sender
   end
+  def receiver
+  end
 end
