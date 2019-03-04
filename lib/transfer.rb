@@ -1,6 +1,7 @@
 class Transfer
-  def initialize first_person, second_person, amount
-
+  def initialize sender, receiver, amount
+    @sender = sender
+    @receiver = receiver
   end
   def sender
   end
