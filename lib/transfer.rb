@@ -22,10 +22,12 @@ class Transfer
   end
 
   def reverse_transfer
-    @old_receiver = @receiver.clone
-    @receiver = @sender
-    @sender = @old_receiver
-    @status = "pending"
-    execute_transaction
+    if @status = "completed"
+      @old_receiver = @receiver.clone
+      @receiver = @sender
+      @sender = @old_receiver
+      @status = "pending"
+      execute_transaction
+    end
   end
 end
